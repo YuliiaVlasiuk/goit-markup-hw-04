@@ -16,6 +16,7 @@ html {
   --wtile-second-color: rgba(255, 255, 255, 0.6);
   --header-underline:#ececec;
   --color-border-card:#EEEEEE;
+  --color-icon: #AFB1B8;
 }
 .header-underline{
    border-bottom: 1px solid var(--header-underline);
@@ -254,6 +255,7 @@ img {
 .button-portfolio:focus {
   color: var(--white-color);
   background-color: var(--blue-color);
+  cursor: pointer;
 }
 .adress-link {
   text-decoration: none;
@@ -271,7 +273,7 @@ img {
   line-height: 1.71;
   color: var(--wtile-second-color);
   margin-top: 9px;
-}
+ }
 
 .adress-link:hover,
 .adress-link:focus,
@@ -381,6 +383,34 @@ img {
 .ourteam {
   background-color: var(--second-backgraund-color);
 }
+
+.group-company{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+.group{
+display:flex;
+outline: 1px solid var(--color-icon);
+width: 170px;
+height: 92px;
+justify-content: center;
+align-items: center;
+fill: var(--color-icon);
+border-radius: 4px;
+}
+
+.group:hover{
+  outline: 1px solid var(--blue-color);
+  fill: var(--blue-color);
+
+}
+.group-link{
+  width: 106px;
+  height: 60px;
+}
 .web{
   display: flex;
   justify-content: center;
@@ -396,7 +426,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
-  fill:var(--grey-color)
+  fill:var(--color-icon)
 }
 .social-link{
   width: 20px;
