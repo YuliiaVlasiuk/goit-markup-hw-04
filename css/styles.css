@@ -439,3 +439,37 @@ border-radius: 4px;
   background-color: var(--blue-color);
   fill: var(--white-color);
 }
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.footer-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill:var(--white-color)
+}
+.footer-icon:hover,
+.footer-icon:focus{
+  background-color: var(--blue-color);
+}
+
+
+
+.footer-title {
+  margin-top: 0;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
