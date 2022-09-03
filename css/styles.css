@@ -149,19 +149,6 @@ img {
 
   text-align: center;
   padding: 200px 0;
-
-
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color:#000000;
-  
 }
 
 .details-title {
@@ -243,7 +230,6 @@ img {
 .button-portfolio:focus {
   color: var(--white-color);
   background-color: var(--blue-color);
-  cursor: pointer;
 }
 .adress-link {
   text-decoration: none;
@@ -260,16 +246,14 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--wtile-second-color);
- }
+  margin-top: 9px;
+}
 
 .adress-link:hover,
 .adress-link:focus,
 .adress-link-color:hover,
 .adress-link-color:focus {
   color: var(--blue-color);
-}
-.adress:not(:last-child){
-  margin-bottom: 9px;
 }
 
 .navig{
@@ -351,6 +335,7 @@ img {
   text-align: center;
   color: var(--grey-color);
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
   /*padding-bottom: 30px;*/
 }
 .team {
@@ -371,4 +356,34 @@ img {
 
 .ourteam {
   background-color: var(--second-backgraund-color);
+}
+.web{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+
+}
+.web-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  fill:var(--grey-color)
+}
+.social-link{
+  width: 20px;
+  height: 20px;
+
+}
+.web-icon:hover,
+.web-icon:focus
+ {
+  background-color: var(--blue-color);
+  fill: var(--white-color);
 }
