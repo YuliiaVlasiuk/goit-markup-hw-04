@@ -160,22 +160,29 @@ img {
   height: 600px;
   max-width: 1600px;
   margin: auto;
-
   text-align: center;
   padding: 200px 0;
   background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4) ,rgba(47, 48, 58, 0.4)) ,  url(../images/hero.jpg);
-
-
-
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
 }
 .about-image{
   display:flex;
   height: 120px;
   background-color:var(--second-backgraund-color);
-  background-size: cover;
   margin-bottom: 30px;
+  border: ;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+
   }
 
+  .icon-about{
+    width: 70px;
+    height: 70px;
+  }
 .details-title {
   margin-top: 0;
   color: var(--main-text-color);
@@ -250,7 +257,8 @@ img {
   text-align: center;
   border-radius: 4px;
   border: none;
-}
+  padding: 6px 22px ;
+ }
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: var(--white-color);
@@ -274,7 +282,10 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--wtile-second-color);
-  margin-top: 9px;
+ }
+ .adress:not(:last-child)
+ {
+  margin-bottom: 9px;
  }
 
 .adress-link:hover,
@@ -412,7 +423,9 @@ fill: var(--color-icon);
 border-radius: 4px;
 }
 
-.group:hover{
+.group:hover,
+.group:focus
+{
   outline: 1px solid var(--blue-color);
   fill: var(--blue-color);
 
@@ -452,7 +465,7 @@ border-radius: 4px;
 
 .footer-container{
   display: flex;
-  align-items: center;
+  align-items:baseline;
   gap: 70px;
 }
 .footer-icon{
